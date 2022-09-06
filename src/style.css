@@ -1,0 +1,116 @@
+h1,
+h2,
+h3,
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-image: linear-gradient(41deg, #03a9f4, #ff9800, #4a494e00);
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+}
+
+.main-header.dark {
+  background-color: black;
+}
+
+.main-header > button {
+  height: 40px;
+  background-color: rgba(17, 165, 165, 0.253);
+  box-shadow: 2px 2px #004b6e77;
+  color: white;
+  border: none;
+}
+
+.main-project h1 {
+  color: blanchedalmond;
+}
+
+.main-project .sub-project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: start;
+  padding: 20px;
+}
+
+.sub-project {
+  min-width: 300px;
+  padding: 10px;
+  padding-top: 0;
+  background-color: gainsboro;
+  border-radius: 5px;
+}
+
+.taskList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.taskList .task-item {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  box-shadow: 2px 2px rgba(196, 195, 190, 0.336);
+  margin-bottom: 5px;
+  background-color: rgb(236, 234, 234);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+  cursor: move;
+  opacity: 1;
+}
+
+.task-item.dragging {
+  background-color: black;
+  opacity: 0.5;
+}
+
+.task-status-Pending {
+  height: 10px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.task-status-InProgress {
+  height: 10px;
+  background-color: yellow;
+  border-radius: 10px;
+}
+
+.task-status-Done {
+  height: 10px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+.add-task-button-visible {
+  display: inline;
+}
+
+.add-task-button-not-visible {
+  display: none;
+}
+
+.add-task-text-visible {
+  display: inline;
+}
+
+.add-task-text-not-visible {
+  display: none;
+}
